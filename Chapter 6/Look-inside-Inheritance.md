@@ -104,7 +104,7 @@ Notice that a derived classes cannot directly initialize member variables inheri
 Base()
 Derived()
 ~Derived()
-Base()
+~Base()
 ```
 
 That is, the construction order and destruction order of a derived class is:
