@@ -92,7 +92,7 @@ int main() {
 Here we use a *Base* pointer to point to a *Derived* object, which is apparently a dynamic binding, so *Derived::show()* is called here. But what is the value of *i*? Remember that when a function is called, its parameters need to be pushed inside the function stack, and this process is done during compilation. But dynamic binding is a runtime behavior, which means the parameters won't be affected. Since we are calling *show()* through a *Base* pointer, the compiler simply pushed the parameters of *Base::show()* inside. So the output should be:
 
 ```
-Derived::show() i = 10
+Derived::show() i = 0
 ```
 
 Moreover, if *Derived::show()* is modified with `private`, can it be compiled? The answer is yes, because the access limitation is also determined under compilation, and the compiler only checks the permission of *Base*'s methods. Instead, if *Base::show()* is modified with `private`, it cannot be compiled.
