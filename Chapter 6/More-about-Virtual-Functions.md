@@ -74,13 +74,13 @@ protected:
 
 class Derived : public Base {
 public:
-    Derive(int data = 20) : Base(data), mb(data) {}
+    Derived(int data = 20) : Base(data), mb(data) {}
     void show() {
         cout << "Derived::show()" << endl;
     }
 private:
     int mb;
-}
+};
 ```
 
 Here we create two objects, and call the *show()* method directly with the object. In this case, the function calls are static binding.
