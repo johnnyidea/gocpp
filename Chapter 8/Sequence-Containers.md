@@ -18,7 +18,7 @@ Sequence containers implement data structures which can be accessed sequentially
 
 **Deleting:**
 
-`vec.pop_back(20);` Delete elements at the end of *vector*. The Time complexity is *O(1)*.
+`vec.pop_back();` Delete elements at the end of *vector*. The Time complexity is *O(1)*.
 
 `vec.erase(it);` Delete elements at where the iterator points to. The Time complexity is *O(n)*.
 
